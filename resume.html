@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Тарас Мельничук</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resume-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+            margin-top: var(--spacing-md);
+        }
+
+        .photo-placeholder {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 4px solid var(--surface-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: var(--spacing-md);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .resume-header {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .resume-header .skills-list {
+                justify-content: center;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="fade-in">
+            <a href="index.html" class="logo">Taras Melnychuk</a>
+            <nav>
+                <a href="index.html">Головна</a>
+                <a href="resume.html" class="active">Резюме</a>
+                <a href="articles.html">Статті</a>
+                <a href="cases.html">Кейси</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="fade-in" style="margin-bottom: var(--spacing-lg);">
+                <h1 style="margin-bottom: 4px; margin-top: 0;">Мельничук Тарас</h1>
+                <span class="role"
+                    style="display:inline-block; font-size:1.05rem; font-weight:500; color:var(--accent-color);">Економіст
+                    | Фінансовий аналітик | ERP-архітектор</span>
+            </div>
+
+            <section class="resume-header fade-in">
+                <div class="photo-placeholder">
+                    <img src="assets/profile.png" alt="Тарас Мельничук">
+                </div>
+                <div class="contact-info" style="margin-top: 0;">
+                    <span><strong>Вік:</strong> 33 роки</span>
+                    <span><strong>Телефон:</strong> +38 (095) 316-12-20</span>
+                    <span><strong>Бажана оплата:</strong> 50 000 грн (net) + компенсація</span>
+                    <span><strong>Додатково:</strong> Потребую бронювання</span>
+                </div>
+            </section>
+
+            <section class="resume-section fade-in" style="margin-top: 0;">
+                <h2>Профіль</h2>
+                <p>Я — економіст за освітою та підприємець у минулому. Мій підхід до роботи можна описати однією
+                    аналогією: я люблю будувати складні, автоматизовані системи (як у комп'ютерній грі Factorio, де я
+                    залишив понад
+                    500+ годин). Я системний та мені подобається порядок. Ще до епохи активного розвитку ШІ я
+                    самостійно впроваджував Power BI-дашборди, просто тому, що кайфую від управління на основі цифр.
+                    Сьогодні я повністю сфокусований на Odoo. Вона стала для мене ідеальним вибором, адже під її
+                    капотом працюють світові технологічні лідери — мова програмування Python та база даних PostgreSQL.
+                    Це дає практично безмежні можливості для кастомізації. За допомогою AI я почав писати власні
+                    модулі та будую архітектуру управлінського
+                    обліку.</p>
+            </section>
+
+            <section class="resume-section fade-in">
+                <h2>Ключові навички та інструменти</h2>
+                <div class="skills-list" style="margin-bottom: var(--spacing-md);">
+                    <span class="skill-tag">Odoo Community</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Управлінський облік</span>
+                    <span class="skill-tag">P&L / Cash Flow / Balance Sheet</span>
+                    <span class="skill-tag">Coda.io</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">1С / BAS</span>
+                </div>
+                <h3
+                    style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); font-size: 1.1rem; color: var(--text-main);">
+                    Мої ключові компетенції та цілі:</h3>
+                <ul
+                    style="color: var(--text-secondary); font-size: 0.95rem; display: flex; flex-direction: column; gap: 8px;">
+                    <li><strong>Побудова та автоматизація обліку:</strong> Реалізація фінансового, управлінського та
+                        виробничого обліку. Збір, структурування та відповідальність за цифри в компанії.</li>
+                    <li><strong>Налаштування бізнес-процесів:</strong> Глобальна оптимізація та автоматизація процесів
+                        по всій компанії для максимальної прозорості та швидкості
+                        роботи.</li>
+                    <li><strong>Впровадження Штучного Інтелекту (ШІ):</strong> Переведення великої кількості рутинних
+                        процесів на ШІ-автоматизацію. Налаштування інструментів штучного інтелекту для кардинальної
+                        економії часу, ресурсів та грошей бізнесу.</li>
+                    <li><strong>Постійне покращення роботи:</strong> Пошук «вузьких місць» у системі та їх усунення за
+                        допомогою технологій. Мій головний драйвер — зробити так, щоб бізнес працював як ідеально
+                        налаштований механізм без людського фактору.</li>
+                </ul>
+            </section>
+
+            <section id="experience" class="resume-section">
+                <h2 class="fade-in">Досвід Роботи</h2>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-header">
+                        <h4>Економіст / Керівник напрямку автоматизації обліку</h4>
+                        <span class="date">Грудень 2025 — дотепер</span>
+                    </div>
+                    <div class="company">Агросектор</div>
+                    <ul>
+                        <li>Повний супровід управлінського обліку підприємства (птахівництво кури-бройлери, переробка
+                            олії).</li>
+                        <li>Розробив та автоматизував фінансову звітність (P&L) та системи відстеження маржинальності
+                            партій за допомогою Power BI та Coda.io.</li>
+                        <li>Ініціював та керую процесом міграції обліку (фінансового та виробничого) на ERP-систему
+                            Odoo.</li>
+                        <li>Налаштував архітектуру бази даних на PostgreSQL, підняв віддалений сервер та організував
+                            доступ для користувачів компанії.</li>
+                        <li>Інтегрував власні модулі в Odoo та впровадив AI-інструменти для автоматичного зчитування
+                            первинної інформації з фотографій, що суттєво пришвидшило обробку даних.</li>
+                        <li>Супровід казначейських операцій: облік кредитного портфеля, банківські операції, взаємодія з
+                            фінансовим моніторингом.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-header">
+                        <h4>Спеціаліст із виробничих процесів</h4>
+                        <span class="date">2022 — 2025</span>
+                    </div>
+                    <div class="company">Агросектор</div>
+                    <ul>
+                        <li>Безпосередня участь у польових та виробничих процесах фермерського господарства.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item fade-in">
+                    <div class="experience-header">
+                        <h4>Адміністратор баз даних / Менеджер з продажів</h4>
+                        <span class="date">2012 — 2022</span>
+                    </div>
+                    <div class="company">Сфера автозапчастин</div>
+                    <ul>
+                        <li>Пройшов шлях від спеціаліста з продажу до ключового адміністратора розробки облікової
+                            системи на базі 1С / BAS.</li>
+                        <li>Трансформував базову 1С / BAS у комплексну ERP-систему компанії: впровадив модулі CRM,
+                            IP-телефонії, фінансового обліку та автоматизований каталог підбору автозапчастин.</li>
+                        <li>Оптимізував та автоматизував ключові бізнес-процеси, що дозволило масштабувати клієнтську
+                            базу та підвищити точність фінансового контролю.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="resume-section fade-in">
+                <h2>Освіта</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Бакалавр: Економіка та підприємництво / Менеджмент</h4>
+                        <span class="date">2010 — 2014</span>
+                    </div>
+                    <div class="company">ПВНЗ «Європейський університет» (м. Київ)</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>© 2026 Taras Melnychuk. Усі права захищені.</p>
+            <p>
+                <a href="#">Telegram</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
