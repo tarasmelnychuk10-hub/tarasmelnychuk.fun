@@ -500,8 +500,17 @@ footer {
   -webkit-tap-highlight-color: transparent !important;
 }
 
-/* Premium Touch Animations (Scale Down) */
-.article-card:active, .card:active, .skill-tag:active {
-  transform: scale(0.98) !important;
-  transition: transform 0.1s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+/* Premium Touch Animations (Scale Down & Dim) */
+.article-card:active, .card:active, .skill-tag:active, nav a:active {
+  transform: scale(0.97) !important;
+  transition: transform 0.1s cubic-bezier(0.4, 0.0, 0.2, 1), background-color 0.15s ease !important;
+}
+
+.article-card:active, .card:active {
+  background-color: #f2f0ed !important; /* Легке затемнення (ближче до кольору фону сторінки) */
+}
+
+.skill-tag:active, nav a:active {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px;
 }
