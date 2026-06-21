@@ -498,3 +498,9 @@ footer {
 * {
   -webkit-tap-highlight-color: transparent !important;
 }
+
+/* Premium Touch Animations (Scale Down) */
+.article-card:active, .card:active, .skill-tag:active {
+  transform: scale(0.98) !important;
+  transition: transform 0.1s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+}
