@@ -450,3 +450,39 @@ footer {
   color: var(--text-tertiary);
   font-size: 0.9rem;
 }
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+}
+
+/* Fix sticky hover effects on touch devices */
+@media (hover: none) {
+  a:hover {
+    color: var(--text-main);
+    border-bottom-color: var(--border-color);
+  }
+  nav a:hover {
+    color: var(--text-secondary);
+  }
+  nav a.active {
+    color: var(--text-main);
+  }
+  .article-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .article-card:hover .article-card-image img {
+    transform: none;
+  }
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border-color);
+  }
+}
